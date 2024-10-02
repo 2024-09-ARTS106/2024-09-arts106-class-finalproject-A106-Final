@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class sc : MonoBehaviour
+public class MyFirstScript : MonoBehaviour
 {
     public int frameNum;
 
@@ -16,7 +17,8 @@ public class sc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Frame " + frameNum + " Update at Time:" + Time.time);
+        Debug.LogFormat("Frame " + frameNum + " Update at Time:" + Time.time);
         frameNum = frameNum + 1;
+
     }
 }
